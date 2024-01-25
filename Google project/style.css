@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+:root{
+    --color-icons: #4c5773;
+    --color-bg-icon: #e2e6e9;
+    --color-dark-shadow: #d3dae7;
+    --color-white: #fff;
+    --color-bg: #ecf0f3;
+    --box-shadow: 1rem 1rem 1rem var(--color-dark-shadow),
+        -1rem -1rem 1rem var(--color-white);
+}
+body{
+    background: var(--color-bg);
+    font-family: Arial,  sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-icons);
+}
+
+
+/* ----------------Wrapper.................... */
+.wrapper{
+    box-shadow: var(--box-shadow);
+    background: var(--color-bg);
+    width: 84%;
+    height: 80%;
+    border-radius: 2rem;
+    padding: 3rem;
+    transition: .3s ease all;
+}
+.wrapper:hover{
+    box-shadow: 0 0 transparent;
+}
+.wrapper .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.wrapper .container .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .top-left{
+    padding: 1rem 2rem;
+    background: var(--color-bg-icon);
+    border-radius: 2rem;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+.wrapper .top-left:hover{
+    background: transparent;
+}
+.wrapper .top-left select{
+    background: transparent;
+    color: var(--color-icons);
+    cursor: pointer;
+}
+
+/* ...........Top-Right......... */
+.wrapper .top-right{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.wrapper .top-right a{
+    width: 3.4rem;
+    height: 3.4rem;
+    background: var(--color-bg-icon);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease all;
+}
+.wrapper .top-right a:hover{
+    box-shadow: var(--box-shadow);
+}
+.wrapper .top-right a img{
+    width: 1.4rem;
+}
+.wrapper .top-right a:last-child{
+    overflow: hidden;
+}
+.wrapper .top-right a:last-child img{
+    width: 100%;
+    display: block;
+    object-fit: cover; 
+}
+
+/* .............Middle................. */
+.wrapper .middle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.wrapper .middle .search-bar img{
+    width: 1.8rem;
+}
+.wrapper .middle .search-bar{
+    background: var(--color-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 2.2rem;
+    transition:  .3s ease all;
+}
+.wrapper .middle .search-bar:hover{
+    box-shadow: 0 0 transparent;
+}
+.wrapper .middle .search-bar input[type='search']{
+    width: 23rem;
+    padding: 1rem 1rem 1rem 0;
+    background: transparent;
+    color: var(--color-icons);
+    margin-left: 1.2rem;
+}
+.wrapper .middle .search-bar .mic{
+    width: 1.3rem !important;
+}
+.wrapper .middle .icons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.wrapper .middle .icons a{
+    background: var(--color-bg-icon);
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-icons);
+    font-size: 17px;
+    transition: .3s ease all;
+}
+.wrapper .middle .icons a:hover{
+    box-shadow: var(--box-shadow);
+}
+
+
+/* ...............Bottom................ */
+.wrapper .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .bottom a{
+    color: var(--color-icons);
+    font-size: 17px;
+} 
+.wrapper .bottom .bottom-right{
+    display: flex;
+    gap: 1.5rem;
+}
